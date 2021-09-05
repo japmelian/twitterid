@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+  <html lang="en">
+  
+  <head>
+    <title>Twitter ID decomposition</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <script defer src="./js/index.js"></script>
+  </head>
+  
+  <body class="bg-gray-50">
+    <div class="flex flex-col flex-nowrap items-center">
+      <div class="font-sans text-6xl font-bold mt-24 mb-6 text-gray-900">
+        Twitter ID decomposition
+      </div>
+
+      <div class="font-sans text-sm font-light mt-0 mb-8 text-gray-500 tracking-wide">
+        Discover what's inside the ID of a tweet
+      </div>
+
+      <div class="bg-gradient-to-r from-blue-400 to-blue-600 shadow-md rounded px-8 pt-6 pb-6 mb-4 flex flex-row space-x-5">
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="tweetid" type="text" placeholder="Type here the Tweet ID"">
+        <button id='button' class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          Calculate!
+        </button>
+      </div>
+
+      <div id="resultDIV" class="shadow overflow-hidden rounded border-b border-gray-200 mt-12">
+        <table id="table" class="min-w-full bg-white">
+          <thead class="bg-gray-800 text-white">
+            <tr>
+              <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Tweet ID</th>
+              <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Twitter datetime</th>
+              <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Milliseconds</th>
+              <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Reserved Bit</th>
+              <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Datacenter</th>
+              <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Worker thread</th>
+              <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Sequence number</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray-700">
+          </tbody>
+        </table>
+    </div>
+    </div>
+  </body>  
+  </html>
