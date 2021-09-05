@@ -1,11 +1,6 @@
 const button = document.querySelector("#button");
-const resultDIV = document.querySelector("#resultDIV");
 const COLUMNS = ["id", "dateTwitter", "milliseconds", "reservedBit", "dataCenter", "workerThread", "sequenceNumber"];
 const MAX_TABLE_ROWS = 10;
-
-function checkNumber(input) {
-
-};
 
 function fillWithZeros(string) {
   const MAX = 64;
@@ -75,7 +70,7 @@ function addRowToTable(values) {
 const calculate = function() {
   const input = BigInt(document.querySelector("input").value);
 
-  baseBin = input.toString(2);
+  let baseBin = input.toString(2);
   baseBin = fillWithZeros(baseBin);
   results = divide(baseBin);
 
