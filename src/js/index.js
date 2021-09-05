@@ -72,7 +72,7 @@ const calculate = function() {
 
   let baseBin = input.toString(2);
   baseBin = fillWithZeros(baseBin);
-  results = divide(baseBin);
+  let results = divide(baseBin);
 
   results.id = input;
 
